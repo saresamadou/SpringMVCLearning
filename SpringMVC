@@ -1,0 +1,40 @@
+What is the component of Spring MVC app ?
+
+ -Configure web.xml => where to tell to a servelet container
+ 	which servlet I am going to deploy
+ 	<servlet> and defining config file location
+ 	<servlet-mapping>
+ 	
+ Configure our servlet config file(beans configuration file) => xml file
+ 	containing beans used by the applications
+ 	add mvc namespace
+ 	specify annotation driven and we need to tell spring that he needs to scan project to find annotation
+ 	add context namespace and add context:component-scan by specifying the package to scan
+ 	
+ - Create controller(s)
+ 	controller(s) provide(s) methods
+ 
+ - Create view(s)
+ 	different views technologies :jsp, 
+ 
+ - adding view resolver in the spring beans configuration file=> Concrete 
+ 	implementation of ViewResolver depending of the situation
+
+- To run the application,we need a servlet container=> Tomcat for example 
+
+Spring Form tag
+	spring-form.tld : <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>  
+	Some uses
+		Evaluates erros
+		Set themes
+		Deliver internationalized messages
+		
+	Tags
+		checkbox, checboxes
+		errors
+		form
+		hidden
+		input
+		label
+		option,options
+	add library access to your jsp page
